@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+}
+
+.heading {
+	padding: 3em 0;
+}
+
+.subtitle {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.title {
+	text-align: center;
+	font-size: 2em;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0.5em 0;
+}
+
+.timecontainer {
+	text-align: center;
+	padding-bottom: 3em;
+}
+
+.timeblock {
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+}
+
+.timenumber {
+	font-size: 4em;
+}
+
+.track {
+	font-size: 0em;					/* REMOVES MARGIN FROM CHILD ELEMENTS */
+	position: relative;
+}
+
+.track div {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+	padding: 1em 2em;
+}
+
+.tracklayout {
+	max-width: 100%;
+	height: 310px;
+}
+
+.tracklayout img{
+	max-width: 100%;
+	max-height: 100%;
+	float: right;
+}
+
+.trackname {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.trackinfo {
+	position: absolute;
+	text-align: left;
+}
+
+.trackinfo p {
+	text-align: left;
+}
+
+.highlight {
+	font-weight: bold;
+}
+
+.superlight {
+	font-size: 1.4em;
+}
+
+table {
+	text-align: left;
+}
+
+table td {
+	padding-right: 2em;
+}
