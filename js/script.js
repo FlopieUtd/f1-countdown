@@ -55,25 +55,18 @@ var showRemaining = function () {
 
     if (seconds === 1) {
         $('#secondstext').html("second");
-    } else if (seconds === 0) {
-        $('#secondsblock').css("visibility", "hidden");
     } else {
         $('#secondstext').html("seconds");
-        $('#secondsblock').css("visibility", "visible");
     }
 
     if (minutes === 1) {
         $('#minutestext').html("minute");
-    } else if (minutes === 0) {
-        $('#minutesblock').css("display", "none");
     } else {
         $('#minutestext').html("minutes");
     }
 
     if (hours === 1) {
         $('#hourstext').html("hour");
-    } else if (hours === 0) {
-        $('#hoursblock').css("display", "none");
     } else {
         $('#hourstext').html("hours");
     }
