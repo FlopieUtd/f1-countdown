@@ -39,16 +39,10 @@ var hour = minute * 60;
 var day = hour * 24;
 var timer;
 
-function showRemaining() {
+var showRemaining = function () {
     var now = new Date();
     var distance = end - now;
-    if (distance < 0) {
 
-        clearInterval(timer);
-        document.getElementById('.days').innerHTML = 'EXPIRED!';
-
-        return;
-    }
     var days = Math.floor(distance / day);
     var hours = Math.floor((distance % day) / hour);
     var minutes = Math.floor((distance % hour) / minute);
@@ -58,10 +52,47 @@ function showRemaining() {
     document.getElementById('hours').innerHTML = hours;
     document.getElementById('minutes').innerHTML = minutes;
     document.getElementById('seconds').innerHTML = seconds;
+
+    if (seconds === 1) {
+        $('#secondstext').html("second");
+    } else if (seconds === 0) {
+        $('#secondsblock').css("visibility", "hidden");
+    } else {
+        $('#secondstext').html("seconds");
+        $('#secondsblock').css("visibility", "visible");
+    }
+
+    if (minutes === 1) {
+        $('#minutestext').html("minute");
+    } else if (minutes === 0) {
+        $('#minutesblock').css("display", "none");
+    } else {
+        $('#minutestext').html("minutes");
+    }
+
+    if (hours === 1) {
+        $('#hourstext').html("hour");
+    } else if (hours === 0) {
+        $('#hoursblock').css("display", "none");
+    } else {
+        $('#hourstext').html("hours");
+    }
+
+    if (days === 1) {
+        $('#daystext').html("day");
+    } else if (days === 0) {
+        $('#daysblock').css("display", "none");
+    } else {
+        $('#daystext').html("days");
+    }    
+
 }
+
 
 showRemaining();
 timer = setInterval(showRemaining, 1000);
+
+
 
 // DISPLAY TRACK LAYOUT
 
