@@ -77,6 +77,7 @@
 .trackinfo {
 	text-align: left;
 	left: 50%;
+	line-height: 1.5em;
 }
 
 .trackinfo p {

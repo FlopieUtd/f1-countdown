@@ -23,7 +23,7 @@ var selectNextRace = function () {
 
 selectNextRace();
 
-upcoming = races[4]; // UNCOMMENT TO SELECT RACE
+// upcoming = races[4]; // UNCOMMENT TO SELECT RACE
 
 // DISPLAY NEXT RACE
 
