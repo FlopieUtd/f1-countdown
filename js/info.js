@@ -23,11 +23,13 @@ var kimiRaikkonen = {
 }
 
 var maxVerstappen = {
+	name: "Max Verstappen",
 	nationality: "The Netherlands",
 	team: "Red Bull"
 }
 
 var danielRicciardo = {
+	name: "Daniel Ricciardo",
 	nationality: "Australia",
 	team: "Red Bull"
 }
@@ -39,9 +41,15 @@ var daniilKvyat = {
 }
 
 var sergioPerez = {
-	name: "Sergio Perez",
+	name: "Sergio P&eacute;rez",
 	nationality: "Mexico",
 	team: "Force India"
+}
+
+var valtteriBottas = {
+	name: "Valtteri Bottas",
+	nationality: "Finland",
+	team: "Williams"
 }
 
 var races = [
@@ -151,6 +159,42 @@ var races = [
 			practice3: new Date('05/27/2017 11:00 AM'),
 			qualifying: new Date('05/27/2017 2:00 PM'),
 			race: new Date('05/28/2017 2:00 PM')
+		}
+	},
+	{
+		date: new Date('06/11/2017 8:00 PM'),
+		name: "Grand Prix du Canada",
+		circuitName: "Circuit Gilles Villeneuve",
+		circuitLength: "4.361 km",
+		circuitImg: "montreal.png",
+		laps: 70,
+		raceDistance: "305.27 km",
+		lapRecord: "1:13.622, Rubens Barichello (2004)",
+		lastYear: [lewisHamilton, sebastianVettel, valtteriBottas],
+		schedule: {
+			practice1: new Date('06/09/2017 4:00 PM'),
+			practice2: new Date('06/09/2017 8:00 PM'),
+			practice3: new Date('06/10/2017 4:00 PM'),
+			qualifying: new Date('06/10/2017 7:00 PM'),
+			race: new Date('06/11/2017 8:00 PM')
+		}
+	},
+	{
+		date: new Date('06/25/2017 3:00 PM'),
+		name: "Azerbaijan Grand Prix",
+		circuitName: "Baku City Circuit",
+		circuitLength: "6.003 km",
+		circuitImg: "baku.png",
+		laps: 51,
+		raceDistance: "306.049 km",
+		lapRecord: "1:46.485, Nico Rosberg (2016)",
+		lastYear: [nicoRosberg, sebastianVettel, sergioPerez],
+		schedule: {
+			practice1: new Date('06/09/2017 11:00 AM'),
+			practice2: new Date('06/09/2017 3:00 PM'),
+			practice3: new Date('06/10/2017 0:00 PM'),
+			qualifying: new Date('06/10/2017 3:00 PM'),
+			race: new Date('06/25/2017 3:00 PM')
 		}
 	},
 ]
